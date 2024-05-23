@@ -1,40 +1,83 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<!-- <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a> -->
 </p>
 
-## About Laravel
+![Matheus Linard](https://github.com/AllysonGerald/hotsite_mlinard/blob/main/public/assets/img/logo.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Este é o repositório da landing page da campanha de Matheus Linard, candidato a deputado estadual em Fortaleza. O projeto foi desenvolvido utilizando o framework Laravel na versão 5.3.31.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requisitos do Sistema
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+- PHP >= 5.6.4
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 
-## Learning Laravel
+## Instalação
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+1. Clone o repositório:
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+   ```sh
+   git clone https://github.com/AllysonGerald/hotsite_mlinard.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd nome-do-repositorio
+   ```
+3. Instale as dependências do Composer:
+   ```sh
+   composer install
+   ```
+4. Copie o arquivo `.env.example` para `.env`:
+   ```sh
+   cp .env.example .env
+   ```
+5. Configure o arquivo .env com as suas credenciais de banco de dados e outras configurações necessárias.
+6. Gere a chave da aplicação:
+   ```sh
+   php artisan key:generate
+   ```
+7. Execute as migrações para criar as tabelas no banco de dados:
+  ```sh
+   php artisan migrate
+   ```
+8. Opcional: Popule o banco de dados com dados fictícios:
+   ```sh
+   php artisan db:seed
+   ```
 
-## Contributing
+## Uso
+Para iniciar o servidor de desenvolvimento, execute o comando:
+```sh
+   php artisan serve
+```
+E acesse a aplicação em [!http://localhost:8000](#).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Estrutura do Projeto
+- **App**: Contém os modelos, controladores e outras classes de lógica de negócios.
+- **Config**: Contém os arquivos de configuração.
+- **Database**: Contém as migrações, seeds e o factory do banco de dados.
+- **Public**: Contém o ponto de entrada da aplicação (index.php) e ativos públicos (imagens, scripts, etc).
+- **Resources**: Contém as views e recursos de linguagem.
+- **Routes**: Contém as definições de rotas.
+- **Storage**: Contém logs, cache e outros arquivos gerados pela aplicação.
+- **Tests**: Contém os testes automatizados.
 
-## Security Vulnerabilities
+## Contribuição
+Se você deseja contribuir com este projeto, siga as etapas abaixo:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1. Fork do repositório.
+2. Crie uma nova branch para sua feature: `git checkout -b minha-feature`.
+3. Commit suas mudanças: `git commit -m "Adiciona minha feature"`.
+4. Push para a branch: `git push origin minha-feature`.
+5. Abra um Pull Request.
 
 ## License
-
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
