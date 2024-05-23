@@ -23,30 +23,29 @@ Este é o repositório da landing page da campanha de Matheus Linard, candidato 
 ## Instalação
 
 1. Clone o repositório:
-
    ```sh
-   git clone https://github.com/AllysonGerald/hotsite_mlinard.git
+      git clone https://github.com/AllysonGerald/hotsite_mlinard.git
    ```
 2. Navegue até o diretório do projeto:
    ```sh
-   cd nome-do-repositorio
+      cd nome-do-repositorio
    ```
 3. Instale as dependências do Composer:
    ```sh
-   composer install
+      composer install
    ```
 4. Copie o arquivo `.env.example` para `.env`:
    ```sh
-   cp .env.example .env
+      cp .env.example .env
    ```
 5. Configure o arquivo .env com as suas credenciais de banco de dados e outras configurações necessárias.
 6. Gere a chave da aplicação:
    ```sh
-   php artisan key:generate
+      php artisan key:generate
    ```
 7. Execute as migrações para criar as tabelas no banco de dados:
-  ```sh
-   php artisan migrate
+   ```sh
+      php artisan migrate
    ```
 8. Opcional: Popule o banco de dados com dados fictícios:
    ```sh
