@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+section {
+    overflow: hidden;
+}
+
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .section-header p {
+        width: 100%;
+    }
+}
+
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+    background: #ecf5ff;
+}
+
+#counts {
+    padding: 60px 0;
+    background: #683996;
+}
+
+#counts .section-header h3,
+#counts .section-header p {
+    color: #fff;
+}
+
+#counts .card {
+    background: #8249ba;
+    border-color: #532e78;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    #counts .card {
+        margin: 0;
+    }
+}
+
+#counts .card:hover {
+    background: #532e78;
+    border-color: #8249ba;
+}
+
+#counts .card i {
+    font-size: 48px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+#counts .card h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#counts .card p {
+    font-size: 15px;
+    color: #fff;
+}
+
+#counts .card .readmore {
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    border-bottom: #448dcb solid 2px;
+}
+
+#counts .card .readmore:hover {
+    border-bottom: #fff solid 2px;
+}
+
+#counts .counters {
+    padding-top: 40px;
+}
+
+#counts .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #fff;
+}
+
+#counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #cce5ff;
+}
